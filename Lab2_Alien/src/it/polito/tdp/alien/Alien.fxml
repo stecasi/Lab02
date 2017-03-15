@@ -39,7 +39,7 @@
                         <Font name="System Bold" size="12.0" />
                      </font>
                   </Label>
-                  <TextField fx:id="txtInsert" prefHeight="27.0" prefWidth="247.0">
+                  <TextField fx:id="txtInsert" prefHeight="27.0" prefWidth="247.0" promptText="Inserisci una parola valida">
                      <padding>
                         <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                      </padding>
@@ -67,7 +67,7 @@
                   </ImageView>
                </children>
             </HBox>
-            <HBox>
+            <HBox alignment="TOP_CENTER">
                <children>
                   <Button fx:id="btnClear" alignment="CENTER_RIGHT" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#doReset" text="Clear Text" textFill="#0bbf20">
                      <padding>
