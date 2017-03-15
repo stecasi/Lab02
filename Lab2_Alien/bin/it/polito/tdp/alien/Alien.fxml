@@ -14,7 +14,7 @@
 
 <BorderPane prefHeight="222.0" prefWidth="434.0" style="-fx-background-color: fff;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.polito.tdp.alien.AlienController">
    <top>
-      <Label text="Lab 1 - Alien Translator" BorderPane.alignment="CENTER">
+      <Label text="Lab 2 - Alien Translator" BorderPane.alignment="CENTER">
          <BorderPane.margin>
             <Insets bottom="10.0" />
          </BorderPane.margin>
@@ -39,12 +39,12 @@
                         <Font name="System Bold" size="12.0" />
                      </font>
                   </Label>
-                  <TextField prefHeight="27.0" prefWidth="247.0">
+                  <TextField fx:id="txtInsert" prefHeight="27.0" prefWidth="247.0">
                      <padding>
                         <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                      </padding>
                   </TextField>
-                  <Button mnemonicParsing="false" text="Translate" textFill="#0bbf20">
+                  <Button fx:id="btnTranslate" mnemonicParsing="false" onAction="#doTranslate" text="Translate" textFill="#0bbf20">
                      <padding>
                         <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                      </padding>
@@ -59,7 +59,7 @@
             </HBox>
             <HBox>
                <children>
-                  <TextArea prefHeight="100.0" prefWidth="295.0" promptText="Welcome to Alien Dictionary v2017." />
+                  <TextArea fx:id="txtResult" prefHeight="100.0" prefWidth="295.0" promptText="Welcome to Alien Dictionary v2017." />
                   <ImageView fitHeight="100.0" fitWidth="104.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../../../../../../../../Desktop/images.png" />
@@ -69,7 +69,7 @@
             </HBox>
             <HBox>
                <children>
-                  <Button alignment="CENTER_RIGHT" contentDisplay="RIGHT" mnemonicParsing="false" text="Clear Text" textFill="#0bbf20">
+                  <Button fx:id="btnClear" alignment="CENTER_RIGHT" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#doReset" text="Clear Text" textFill="#0bbf20">
                      <padding>
                         <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                      </padding>
